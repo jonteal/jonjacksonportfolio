@@ -1,0 +1,115 @@
+.navbar {
+    background-color: #0D3243;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    color: white;
+}
+
+.navbar-item {
+    color: #0D3243;
+    font-size: large;
+    font-weight: normal;
+}
+
+.navbar-item, .navbar-link {
+    color: seashell;
+    background-color: #0D3243;
+}
+
+.brand-statement {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.main-section {
+    background-color: #155370;
+    color: whitesmoke;
+}
+
+h1 {
+    font-size: 8rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    position: relative;
+    right: 25%;
+    top: 3rem;
+    /* border: plum solid 3px; */
+}
+
+.quote {
+    font-family: 'Shalimar', cursive;
+    font-size: 4rem;
+    text-align: center;
+    position: relative;
+    left: 10%;
+    padding-bottom: 5rem;
+    padding-right: 5rem;
+}
+
+h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* border: springgreen solid 3px; */
+    color: seashell;
+}
+
+h3 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-decoration: underline;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    /* border: pink solid 3px; */
+}
+
+h4 {
+    font-size: 2rem;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    padding-bottom: 3rem;
+    /* border:purple solid 3px; */
+}
+
+.dev-name {
+    padding: 3rem;
+}
+
+
+.brand-statement {
+    font-family: 'Raleway', sans-serif;
+    padding-bottom: 6rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    font-size: 2rem;
+    /* border: red solid 5px; */
+}
+
+.footer {
+    background-color: #155370;
+}
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.footer_list {
+    display: flex;
+    flex-direction: row;
+    color: seashell;
+    /* border: red solid 5px; */
+}
+
+.footer-list-item, footer__link {
+    color: seashell;
+}
+
+body {
+    background-color: #155370;
+}
