@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@1,500&family=Shalimar&display=swap" rel="stylesheet">
@@ -13,6 +14,8 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="./assets/style.css">
     <title>Jon Jackson WebDev</title>
 </head>
@@ -26,7 +29,7 @@
                         Jon
                     </a>
 
-                    <a class='navbar-item page' id='resume' href="./assets/files/Jon Jackson_WebDev.pdf">
+                    <a class='navbar-item page' id='resume' href="./assets/files/Jon Jackson_WebDev.pdf" target = "_blank">
                         Resume
                     </a>
 
@@ -35,7 +38,7 @@
                             Projects
                         </a>
                         <div class='navbar-dropdown'>
-                            <a class="navbar-item page" id='option-1' href="https://msp4msps.github.io/eat_the_frog/" target="_blank">
+                            <a href="./projects/eatthefrog.html" class="navbar-item page" id='option-1'>
                                 Eat the Frog
                             </a>
                             <a class="navbar-item page" id='option-2'>
@@ -44,16 +47,16 @@
                             <a class="navbar-item page" id='option-3'>
                                 Readme Generator
                             </a>
-                            <a class="navbar-item page" id='option-4'>
+                            <a class="navbar-item page" id='option-4' href="https://jonteal.github.io/weather-dashboard/" target="_blank">
                                 Weather Dashboard
                             </a>
-                            <a class="navbar-item page" id='option-4'>
+                            <a class="navbar-item page" id='option-4' href="https://jonteal.github.io/Random-Password-Generator/" target="_blank">
                                 Random Password Generator
                             </a>  
-                            <a class="navbar-item page" id='option-4'>
+                            <a class="navbar-item page" id='option-4' href="https://jonteal.github.io/work-day-scheduler/" target="_blank">
                                 Work Day Scheduling Tool
                             </a>
-                            <a class="navbar-item page" id='option-4'>
+                            <a class="navbar-item page" id='option-4' href="https://jonteal.github.io/game-of-thrones-quiz/" target="_blank">
                                 Game of Thrones Quiz
                             </a>                          
                         </div>
@@ -65,7 +68,7 @@
                         Github
                     </a>
 
-                    <a class='navbar-item page' id='contact' href="mailto:jonjackson.webdesign@gmail.com">
+                    <a class='navbar-item page' id='contact' href="mailto:jonjackson.webdesign@gmail.com" target = "_blank">
                         Contact
                     </a>
                 </div>
@@ -75,39 +78,43 @@
 
     <main>
 
-    <div class="main-section">
+    <div class="bio-section">
         <div class="name-heading">
             <h1 class="dev-name">Jon Jackson</h1>
             <p class="quote">You have brains in your head. You have feet in your shoes. You can steer yourself in any direction you choose. -Dr. Seuss</p>
+        </div>  
+        
+        <div id="bio-element">
             <h2>Web Developer</h2>
+        
+            <p class="brand-statement"  >
+                Full stack web developer leveraging background in marketing and business to provide unique perspectives on how end-users interact with
+                websites and software platforms. Earned a certificate in Full Stack Web Development from the Denver University Coding Boot Camp Comment start . 
+                Comment end  Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths 
+                in creativity, teamwork, and building projects from ideation to execution. Focused and specialized in HTML5, CSS3, Javascript, Node.JS, Third-Party API's, 
+                and more! Bachelor's of Science in Marketing & Business Administration with background in technical sales and robotics integration, and a strong 
+                aptitude for product knowledge.
+            </p>
+
+            <h3>Languages</h3>
+            <h4>Javascript, SQL</h4>
+
+            <h3>UI Frameworks</h3>
+            <h4>React, Bootstrap, Bulma, jQuery</h4>
+
+            <h3>UI</h3>
+            <h4>CSS3, SASS, HTML5</h4>
+
+            <h3>Server</h3>
+            <h4>Node, Express, Rest</h4>
+
+            <h3>Databases</h3>
+            <h4>MySql, SQL Server, Sequelize</h4>
         </div>
-
-        <p class="brand-statement">
-            Full stack web developer leveraging background in marketing and business to provide unique perspectives on how end-users interact with
-            websites and software platforms. Earned a certificate in Full Stack Web Development from the Denver University Coding Boot Camp Comment start . 
-            Comment end  Innovative problem-solver who is passionate about developing apps with a focus on mobile-first design and development. Strengths 
-            in creativity, teamwork, and building projects from ideation to execution. Focused and specialized in HTML5, CSS3, Javascript, Node.JS, Third-Party API's, 
-            and more! Bachelor's of Science in Marketing & Business Administration with background in technical sales and robotics integration, and a strong 
-            aptitude for product knowledge.
-        </p>
-
-        <h3>Languages</h3>
-        <h4>Javascript, SQL</h4>
-
-        <h3>UI Frameworks</h3>
-        <h4>React, Bootstrap, Bulma, jQuery</h4>
-
-        <h3>UI</h3>
-        <h4>CSS3, SASS, HTML5</h4>
-
-        <h3>Server</h3>
-        <h4>Node, Express, Rest</h4>
-
-        <h3>Databases</h3>
-        <h4>MySql, SQL Server, Sequelize</h4>
-
-
     </div>
+
+
+
 
     <section>
         <h2>Work</h2>
@@ -164,13 +171,12 @@
     </main>
     
     <footer id="contact-me" class="footer">
-
         <div class="footer-container">
             <h2 class="footer__title">Contact Me</h2>
             <ul class="footer__list">
                 <li class="footer__list-item"><a class="footer__link" href="tel:479-601-3157">479-601-3157</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="mailto:jonjacksonvibes@gmail.com" alt="Link to Send Jon Jackson an email">Email</a></li>
-                <li class="footer__list-item"><a class="footer__link" href="https://twitter.com/realjonteal" alt="Link to Jon Jackson's twitter account.">Twitter</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="mailto:jonjackson.webdesign@gmail.com" alt="Link to Send Jon Jackson an email">Email</a></li>
+                <li class="footer__list-item"><a class="footer__link" href="https://twitter.com/devjonjackson" alt="Link to Jon Jackson's twitter account.">Twitter</a></li>
                 <li class="footer__list-item"><a class="footer__link" href="https://soundcloud.com/realjonteal" alt="Link to Jon Jackson's soundcloud account.">Soundcloud</a></li>
             </ul>
         </div>
@@ -178,6 +184,8 @@
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script> -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src='./assets/js/index-script.js'></script>

@@ -1,3 +1,7 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 .navbar {
     background-color: #0D3243;
     position: fixed;
@@ -22,7 +26,7 @@
     text-align: center;
 }
 
-.main-section {
+.bio-section {
     background-color: #155370;
     color: whitesmoke;
 }
@@ -99,17 +103,79 @@ h4 {
 
 }
 
-.footer_list {
+.footer__list {
     display: flex;
     flex-direction: row;
     color: seashell;
     /* border: red solid 5px; */
 }
 
-.footer-list-item, footer__link {
+.footer__link {
     color: seashell;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1.5rem;
+}
+
+.footer__link:hover {
+    background-color: aliceblue;
+    border-radius: 3%;
 }
 
 body {
     background-color: #155370;
+}
+
+/* #accordian-section {
+    display: none;
+} */
+
+/* CSS for the HTML Project Pages */
+/* .title {
+
+} */
+
+.card-project-title {
+    top: 4rem; 
+    position: relative;
+}
+
+.card-project-description {
+    padding-top: 4rem;
+    position: relative;
+}
+
+.card-project-link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.project-link {
+    /* color: seashell; */
+    font-size: large;
+}
+
+.project-link:hover {
+    background-color: aliceblue;
+    border-radius: 3%;
+}
+
+.project-info-1, .project-info-2 {
+    color: seashell;
+}
+
+.repo-btn {
+    font:#0D3243;
+    border-radius: 5px;
+    position: relative;
+    left: 40%;
+}
+
+.live-btn {
+    font:#0D3243;
+    border-radius: 5px;
+    position: relative;
+    right: 40%;
 }
