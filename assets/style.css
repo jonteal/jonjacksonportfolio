@@ -1,26 +1,37 @@
+:root {
+    --darkerblue: #001b2e;
+    --darkblue: #294c60;
+    --grayblue: #adb6c4;
+    --lighttan: #ffefd3;
+    --peach: #ffc49b;
+}
+
+
 /* Universal Selectors */
 *, *::before, *::after {
     box-sizing: border-box;
 }
 
+
+
 /* Navbar Selectors */
 .navbar {
-    background-color: #0D3243;
+    background-color: var(--darkerblue);
     position: fixed;
     top: 0px;
     width: 100vw;
-    color: white;
+    color: var(--lighttan);
 }
 
 .navbar-item {
-    color: #0D3243;
+    color: var(--lighttan);
     font-size: large;
     font-weight: normal;
 }
 
 .navbar-item, .navbar-link {
-    color: seashell;
-    background-color: #0D3243;
+    color: var(--lighttan);
+    background-color: var(--darkerblue);
 }
 
 /* Main Content / Body */
@@ -29,7 +40,7 @@
 }
 
 body {
-    background-color: #155370;
+    background-color: var(--darkblue);
 }
 
 .brand-statement {
@@ -38,12 +49,12 @@ body {
 }
 
 .bio-section {
-    background-color: #155370;
-    color: whitesmoke;
+    background-color: var(--darkblue);
+    color: var(--lighttan);
 }
 
 h1 {
-    font-size: 8rem;
+    font-size: 5rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-align: center;
@@ -51,6 +62,7 @@ h1 {
     right: 25%;
     top: 3rem;
     /* border: plum solid 3px; */
+    color: var(--lighttan);
 }
 
 .quote {
@@ -82,7 +94,7 @@ h2 {
     font-family: 'Raleway', sans-serif;
     text-align: center;
     /* border: springgreen solid 3px; */
-    color: seashell;
+    color: var(--lighttan);
     padding-top: 5rem;
 }
 
@@ -104,7 +116,7 @@ h4 {
 }
 
 .dev-name {
-    padding: 3rem;
+    padding: 1rem;
 }
 
 .item {
@@ -131,9 +143,12 @@ hr {
 }
 
 .profile-pic {
-    width: 50%;
-    border-radius: 10%;
-    padding-top: 8rem;
+    position: absolute;
+    width: 150px;
+    height: auto;
+    border: 50%;
+    top: 1rem;
+    left: 2.5rem;
 }
 
 .footer {
@@ -165,6 +180,24 @@ hr {
     border-radius: 3%;
 }
 
+.contact-me {
+    padding: 20px 0;
+    color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.hero {
+    height: 30rem;
+    width: 100%;
+    margin-bottom: 25px;
+    /* background-image: url("../assets/Images/mountains.jpeg"); */
+    background-size: cover;
+    position: relative;
+}
+
 
 /* HTML Project Pages */
 
@@ -189,10 +222,10 @@ hr {
     font-size: large;
 }
 
-.project-link:hover {
+/* .project-link:hover {
     background-color: aliceblue;
     border-radius: 3%;
-}
+} */
 
 .project-info-1, .project-info-2 {
     padding-top: 2.5rem;
