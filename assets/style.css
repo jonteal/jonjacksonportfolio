@@ -269,5 +269,40 @@ body {
 }
 
 
-/* MEDIA QUERIES */
+/* ======== MEDIA QUERIES ======== */
 
+
+/* WIDE SCREENS - 1320px and up */
+@media only screen and (max-width: 1320px) {
+    h2 {
+        font-size: 3.5rem;
+    }
+    .navbar-menu,
+    .navbar-item,
+    .is-hoverable {
+        /* float: none; */
+        /* clear: left; */
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    h2 {
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 1020px) {
+    h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media only screen and (max-width: 1025px) {
+    h2 {
+        font-size: 2.8rem;
+    }
+    
+}
