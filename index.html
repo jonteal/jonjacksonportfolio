@@ -23,29 +23,22 @@
 
 <body>
     <header>
-        <nav class='navbar' role='navigation' aria-label='main navigation'>
-            <div id='navbar' class='navbar-menu mx-3'>
 
+        <h1 class="dev-name">Jon Jackson</h1>
 
-                <img class="profile-pic" src="./assets/Images/profile pic.jpeg">
+        <nav class="links links-content navbar-end">
 
-                <h1 class="dev-name">Jon Jackson</h1>
+            <a id='resume' href="./assets/files/Jon Jackson_WebDev.pdf" target = "_blank">Resume</a>
 
+            <a id='github' href="https://github.com/jonteal" target="_blank">Github</a>
 
-                <div class='navbar-end'>
-                    <a class='navbar-item page' id='home'>
-                        Home
-                    </a>
+            <a id='contact' href="mailto:jonjackson.webdesign@gmail.com" target = "_blank">Contact</a>
 
-                    <a class='navbar-item page' id='resume' href="./assets/files/Jon Jackson_WebDev.pdf" target = "_blank">
-                        Resume
-                    </a>
-
-                    <div class='navbar-item is-hoverable'>
-                        <a class='navbar-link'>
-                            Projects
-                        </a>
-                        <div class='navbar-dropdown'>
+                    <!-- <div class='dropdown'>
+                        <button class='dropbtn'>Projects
+                            <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class='dropdown-content'>
                             <a href="https://github.com/msp4msps/eat_the_frog" class="navbar-item page" id='option-1' target="_blank">
                                 Eat the Frog
                             </a>
@@ -83,23 +76,17 @@
                                 BrightIdeas - Project Manager App 
                             </a>                    
                         </div>
-                    </div>
-                </div>
-
-                    <a class='navbar-item' id='github' href="https://github.com/jonteal" target="_blank">
-                        Github
-                    </a>
-
-                    <a class='navbar-item page' id='contact' href="mailto:jonjackson.webdesign@gmail.com" target = "_blank">
-                        Contact
-                    </a>
-            </div>
+                    </div> -->
         </nav>
+
+
     </header>
 
-    <section class="hero" alt="Large photo of mountains"></section>  
+    <section class="hero" alt="Large photo of mountains"> 
 
-    <div class="quote vov blur-in">You have brains in your head. You have feet in your shoes. You can steer yourself in any direction you choose. -Dr. Seuss</div>
+        <div id="quote" class="vov blur-in">You have brains in your head. You have feet in your shoes. You can steer yourself in any direction you choose. <br> -Dr. Seuss</div>
+        <img src="./assets/Images/profile pic.jpeg" id="profile-pic" >
+    </section> 
 
     <main class="main-container">
 
@@ -111,7 +98,7 @@
 
     <section class="about-me">
 
-        <h2 class="align-left">About Me</h2>
+        <h2 class="align-left about-me-text">About Me</h2>
                 
         <p class="brand-statement align-right">
                     Full stack web developer leveraging background in marketing and business to provide unique perspectives on how end-users interact with
@@ -127,7 +114,7 @@
 
     <section class="technologies">
 
-        <h2 class="align-left">Technologies</h2>
+        <h2 class="align-left technologies-text">Technologies</h2>
 
         <div class="skills-container align-right">
             <div class="skills">
@@ -162,7 +149,7 @@
     <hr>
 
     <section class="work">
-        <h2 class="align-left">Work</h2>
+        <h2 class="align-left work-text">Work</h2>
         <div class="container align-right">
             <br>
             <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -283,6 +270,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
-    <script src='./assets/js/index-script.js'></script>
+    <script src='./assets/script.js'></script>
 </body>
 </html>

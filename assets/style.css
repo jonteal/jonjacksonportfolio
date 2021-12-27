@@ -39,15 +39,50 @@ a {
     cursor: pointer;
 }
 
+hr {
+    color: black;
+}
+
 
 /* ======== HEADERS ======== */
+
+header {
+    background-color: var(--darkblue);
+    padding: 20px;
+    color: white;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 52px;
+}
+
 h1 {
     font-size: 5rem;
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    top: 1rem;
+    /* top: 1rem; */
     color: white;    
+}
+
+.about-me h2,
+.technologies h2,
+.work h2 {
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    color: var(--darkerblue);
+    padding-right: 2rem;
+    display: inline;    
+    flex: var(--flex-basis-left);
+    background-color: var(--lighttan);
 }
 
 h2 {
@@ -78,41 +113,25 @@ h4 {
 
 
 /* ======== Navbar Selectors ======== */
-.navbar {
-    background-color: var(--darkblue);
-    position: fixed;
-    top: 0px;
-    width: 100vw;
+
+.links {
+    padding-top: 1.5rem;
+    margin-right: 2rem;
+    float: right;
+    font-size: 20px;
+}
+
+.links a {
+    padding-left: 2rem;
     color: white;
-    opacity: 95%;
-    height: 10rem;
 }
 
-.navbar-item {
-    color: white;
-    font-size: large;
-    font-weight: normal;
-}
-
-.navbar-item, .navbar-link {
-    color: white;
-    background-color: var(--darkblue);
-}
-
-.dev-name {
-    padding: 1rem;
-    position: relative;
-    margin-left: 18rem;
-}
-
-.profile-pic {
-    border: 50%;
-    position: absolute;
-    left: 2.5rem;
-    border-radius: 50%;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.links ul li {
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 25px;
+    text-transform: uppercase;
+    padding-left: 2rem;
 }
 
 .hero {
@@ -121,22 +140,38 @@ h4 {
     margin-bottom: 25px;
     background-image: url("../assets/Images/mountains.jpeg"); 
     background-size: cover;
-    margin-top: 10rem;
+    position: relative;
 }
 
-.quote {
+#profile-pic {
+    position: absolute;
+    width: 150px;
+    height: auto;
+    left: 1rem;
+    top: 0.5rem;
+    border-radius: 50%;
+    float: left;
+}
+
+#quote {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
     font-family: 'Shalimar', cursive;
     font-size: 4rem;
     text-align: center;
     padding-right: 5rem;
-    padding: 3rem 8rem;
-    display: inline-block;
-    font-size: 2.5rem;
-    border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%;
+    padding: 1rem 2rem;
+    /* display: inline-block; */
+    font-size: 1.8rem;
+    /* border-radius: 2% 6% 5% 4% / 1% 1% 2% 4%; */
     text-transform: uppercase;
     letter-spacing: 0.3ch;
     color: var(--darkblue);
     font-weight: bold;
+    /* float: right; */
+    background-color: var(--lighttan);opacity:0.9;
+    width: 40%;
 }
 
 
@@ -269,6 +304,11 @@ body {
 }
 
 
+.icon {
+    display: none;
+}
+
+
 /* ======== MEDIA QUERIES ======== */
 
 
@@ -278,11 +318,9 @@ body {
         font-size: 3.5rem;
     }
     .navbar-menu,
-    .navbar-item,
-    .is-hoverable {
+    .navbar-item {
         /* float: none; */
         /* clear: left; */
-        width: 100%;
         display: flex;
         flex-direction: column;
     }
@@ -304,5 +342,101 @@ body {
     h2 {
         font-size: 2.8rem;
     }
+
     
+}
+
+@media screen and (max-width: 980px) {
+
+    header nav {
+        float: none;
+        clear: left;
+        width: 100%;       
+    }
+    .links {
+        float: none;
+        display: inline-block;
+        text-align: center;
+    }
+
+    header nav ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-me,
+    .technologies,
+    .work,
+    .contact-me {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+    h2 {
+        text-decoration: underline;
+        font-size: 4rem;
+    }
+
+    header nav ul li {
+        width: 20%;
+        padding: 0;
+        text-align: center;
+        margin: 0;
+    }
+
+    .main-img-resize {
+        width: 450px;
+        height: auto;
+    }
+
+    .img-box-resize {
+        width: 300px;
+        height: auto;
+    }
+    
+    .contact-me {
+        display: block;
+        justify-self: center;
+        width: 100%;
+    }
+
+    .links1 {
+        flex: none;
+    }
+
+    .align-right {
+        border-left: none;
+    }
+
+}
+
+/* Smaller tablets */
+
+
+
+
+@media screen and (max-width: 420px)  {   
+    .links ul li,
+    .links1 ul li {
+        display: block;
+        padding-bottom: 5rem;
+    }
+
+    header h1 {
+        padding-left: 3rem;
+    }
+
+    header nav ul li,
+    .links1 {
+        width: 100%;
+    }
+
+    .dev-name {
+        margin-right: 5rem;
+    }
+    #quote {
+        font-size: small;
+    }
 }
