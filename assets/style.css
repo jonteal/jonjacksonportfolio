@@ -48,7 +48,7 @@ hr {
 
 header {
     background-color: var(--darkblue);
-    padding: 20px;
+    padding: 1px;
     color: white;
     width: 100%;
     height: auto;
@@ -60,6 +60,7 @@ header {
 header h1 {
     display: inline-block;
     font-size: 52px;
+    margin-left: 3rem;
 }
 
 h1 {
@@ -413,6 +414,11 @@ body {
     .item {
         height: 300px;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: auto;
+    }
 }
 
 @media screen and (max-width: 420px)  {   
@@ -439,4 +445,158 @@ body {
     .item {
         height: 250px;
     }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
+        grid-gap: 1rem;
+    }
 }
+
+
+
+
+
+
+/* ================= GRID PAGE ================= */
+
+.project-page-title {
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 50px;
+    background-color: white;
+    padding-bottom: 10px;
+    padding: 5%;
+}
+
+.grid-container > span {
+    text-align: center;
+    padding: 20px 0;
+    font-size: 30px;
+    height: 10rem;
+}
+
+.img-box1 {
+    opacity: 0.5;
+}
+
+.img-box1:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.item1 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/brightideas_login.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item2 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/eat\ the\ frog.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item3 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/thedailydev.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item4 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/weather-dashboard.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item5 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/work-day-scheduler.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item6 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/Game\ of\ Thrones\ Quiz.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item7 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/e-commerce-backend.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item8 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/employee-tracker-screenshot.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item9 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/note-taker.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item10 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/Team-Profile-Generator.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item11 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/readmegeneratorscreenshot.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.item12 {
+    height: auto;
+    position: relative;
+    background-image: url(./Images/rpg_screenshot.png);
+    background-size: cover;
+    border: solid 3px var(--darkerblue);
+}
+
+.image-title1 {
+    background-color: var(--lighttan);
+    font-size: 1.5rem;
+    bottom: 1rem;
+    position: absolute;
+    text-align: center;
+    padding: 1rem;
+    font-weight: bold;
+}
+
