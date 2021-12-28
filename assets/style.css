@@ -446,16 +446,21 @@ body {
         height: 250px;
     }
 
-    .grid-container {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(420px, 1fr));
-        grid-gap: 1rem;
+    .project-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .image-title1 {
+        background-color: var(--lighttan);opacity: 95%;
+        font-size: 1rem;
+        top: 0.5rem;
+        position: absolute;
+        text-align: center;
+        padding: 0.2rem;
+        font-weight: bold;
     }
 }
-
-
-
-
 
 
 /* ================= GRID PAGE ================= */
@@ -471,7 +476,7 @@ body {
 
 .grid-container {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     grid-gap: 50px;
     background-color: white;
     padding-bottom: 10px;
@@ -486,7 +491,7 @@ body {
 }
 
 .img-box1 {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .img-box1:hover {
@@ -495,7 +500,7 @@ body {
 }
 
 .item1 {
-    height: auto;
+    height: 10%;
     position: relative;
     background-image: url(./Images/brightideas_login.png);
     background-size: cover;
@@ -600,3 +605,32 @@ body {
     font-weight: bold;
 }
 
+.col {
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+
+.project-page-link1 {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.project-page-link2 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
+}
