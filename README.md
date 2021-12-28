@@ -36,9 +36,9 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 ## Links
 
-Github: https://github.com/jonteal/updated-profile
+Github: https://github.com/jonteal/jonjacksonportfolio
 
-View my portfolio here: https://jonteal.github.io/updated-profile/
+View my portfolio here: https://jonteal.github.io/jonjacksonportfolio/
 
 
 ## Collaborators
