@@ -68,7 +68,6 @@ h1 {
     font-weight: bold;
     font-family: 'Raleway', sans-serif;
     text-align: center;
-    /* top: 1rem; */
     color: white;    
 }
 
@@ -251,7 +250,7 @@ body {
 }
 
 .img-box1 {
-    opacity: 0.5;
+    opacity: 0.8;
 }
 
 .img-box1:hover {
@@ -304,6 +303,49 @@ body {
 
 .icon {
     display: none;
+}
+
+
+/* ===================== PROJECT PAGE ===================== */
+
+.project-page-title {
+    text-decoration: underline;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+}
+
+.col {
+    margin-bottom: 2rem;
+}
+
+.card-img-top {
+    width: 100%;
+    height: 25vw;
+    object-fit: cover;
+}
+
+.card-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.card-text {
+    font-size: 1.5rem;
+}
+
+
+.project-page-link1 {
+    font-size: 1.5rem;
+    margin-right: 2rem;
+}
+
+.project-page-link2 {
+    font-size: 1.5rem;
+    margin-left: 2rem;
 }
 
 
@@ -460,177 +502,4 @@ body {
         padding: 0.2rem;
         font-weight: bold;
     }
-}
-
-
-/* ================= GRID PAGE ================= */
-
-.project-page-title {
-    text-decoration: underline;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-bottom: 2rem;
-}
-
-.grid-container {
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-gap: 50px;
-    background-color: white;
-    padding-bottom: 10px;
-    padding: 5%;
-}
-
-.grid-container > span {
-    text-align: center;
-    padding: 20px 0;
-    font-size: 30px;
-    height: 10rem;
-}
-
-.img-box1 {
-    opacity: 0.8;
-}
-
-.img-box1:hover {
-    opacity: 1;
-    cursor: pointer;
-}
-
-.item1 {
-    height: 10%;
-    position: relative;
-    background-image: url(./Images/brightideas_login.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item2 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/eat\ the\ frog.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item3 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/thedailydev.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item4 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/weather-dashboard.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item5 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/work-day-scheduler.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item6 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/Game\ of\ Thrones\ Quiz.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item7 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/e-commerce-backend.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item8 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/employee-tracker-screenshot.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item9 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/note-taker.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item10 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/Team-Profile-Generator.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item11 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/readmegeneratorscreenshot.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.item12 {
-    height: auto;
-    position: relative;
-    background-image: url(./Images/rpg_screenshot.png);
-    background-size: cover;
-    border: solid 3px var(--darkerblue);
-}
-
-.image-title1 {
-    background-color: var(--lighttan);
-    font-size: 1.5rem;
-    bottom: 1rem;
-    position: absolute;
-    text-align: center;
-    padding: 1rem;
-    font-weight: bold;
-}
-
-.col {
-    margin-bottom: 2rem;
-}
-
-.card-img-top {
-    width: 100%;
-    height: 25vw;
-    object-fit: cover;
-}
-
-.card-title {
-    font-size: 1.8rem;
-    font-weight: bold;
-}
-
-.card-text {
-    font-size: 1.5rem;
-}
-
-
-.project-page-link1 {
-    font-size: 1.5rem;
-    margin-right: 2rem;
-}
-
-.project-page-link2 {
-    font-size: 1.5rem;
-    margin-left: 2rem;
 }
