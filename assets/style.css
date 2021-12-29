@@ -210,7 +210,6 @@ body {
     flex-direction: row;
     flex: var(--flex-basis-left);
     align-items: center;
-    justify-content: space-between;
 }
 
 .skills-container {
@@ -256,6 +255,10 @@ body {
 .img-box1:hover {
     opacity: 1;
     cursor: pointer;
+}
+
+.carousel-container {
+    margin-left: 0px !important;
 }
 
 
